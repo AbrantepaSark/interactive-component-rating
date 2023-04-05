@@ -1,0 +1,68 @@
+.Rectangle {
+  height: 416px;
+  width: 412px;
+  position: absolute;
+  left: 514px;
+  top: 195px;
+
+  /* Black (Gradient) */
+
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+}
+
+.Img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 32px;
+}
+
+.Rate {
+  background: #262e38;
+  border-radius: 22.5px;
+  height: 32px;
+  width: 193px;
+  margin: auto;
+  border-radius: 22.5px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc7614;
+}
+
+.Header {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 32px;
+  margin-bottom: 7px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.Text {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+
+  text-align: center;
+  margin: 0px 35px 52px 33px;
+
+  /* Light Grey */
+
+  color: #969fad;
+}

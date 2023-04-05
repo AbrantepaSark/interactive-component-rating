@@ -1,9 +1,17 @@
+.main {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Rectangle {
   height: 416px;
   width: 412px;
-  position: absolute;
-  left: 514px;
-  top: 195px;
+  margin: 0 12px 0 12px;
 
   /* Black (Gradient) */
 
@@ -13,13 +21,13 @@
     #181e27 100%
   );
   border-radius: 30px;
+  padding: 45px 20px;
 }
 
 .Img {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
   margin-bottom: 32px;
 }
 
@@ -27,13 +35,13 @@
   background: #262e38;
   border-radius: 22.5px;
   height: 32px;
-  width: 193px;
+  width: 183px;
   margin: auto;
   border-radius: 22.5px;
   font-family: "Overpass";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,9 +68,42 @@
   /* or 160% */
 
   text-align: center;
-  margin: 0px 35px 52px 33px;
+  margin: 0px 35px 0 33px;
 
   /* Light Grey */
 
   color: #969fad;
+}
+
+@media (max-width: 400px) {
+  .Rectangle {
+    height: 360px;
+    width: 327x;
+    padding: 24px;
+    border-radius: 15px;
+  }
+
+  .Rate {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 2px;
+  }
+
+  .Img {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    height: 96px;
+  }
+
+  .Header {
+    font-size: 24px;
+    margin-top: 28px;
+  }
+
+  .Text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
 }

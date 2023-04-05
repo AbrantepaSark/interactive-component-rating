@@ -1,9 +1,17 @@
+.main {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Rectangle {
   height: 416px;
   width: 412px;
-  position: absolute;
-  left: 514px;
-  top: 195px;
+  margin: 0 12px 0 12px;
 
   /* Black (Gradient) */
 
@@ -123,4 +131,60 @@
   letter-spacing: 0.2px;
 
   /* Medium Gray */
+}
+
+@media (max-width: 400px) {
+  .Rectangle {
+    height: 360px;
+    width: 327x;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 0 24px 0 24px;
+  }
+
+  .StarContainer {
+    height: 40px;
+    width: 40px;
+  }
+
+  .Star {
+    width: 14px;
+    height: 14px;
+  }
+
+  .Header {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .Text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .RateContainer {
+    width: 42px;
+    height: 42px;
+  }
+
+  .rateText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .rateBox {
+    margin-top: 20px;
+  }
+
+  .SubmitButton {
+    margin-top: 24px;
+  }
+
+  .Submit {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

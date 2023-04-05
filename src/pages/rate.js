@@ -19,12 +19,12 @@ export default function Rate(props) {
       <main className={styles.main}>
         <div className={styles.Rectangle}>
           <div className={styles.Img}>
-            <Image src={MySVG} alt="slip" height={90} />
+            <Image src={MySVG} alt="slip" />
           </div>
           <div className={styles.Rate}>
             <p>You selected {rate} out of 5</p>
           </div>
-          <h3 className={styles.Header}>Thank you</h3>
+          <h3 className={styles.Header}>Thank you!</h3>
           <p className={styles.Text}>
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!

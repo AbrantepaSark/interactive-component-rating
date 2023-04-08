@@ -1,0 +1,39 @@
+.main {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 416px;
+  width: 412px;
+  margin: 0 24px;
+
+  /* Black (Gradient) */
+
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+  padding: 32px;
+  color: #ffffff;
+
+  font-family: "Overpass";
+  font-style: normal;
+}
+
+@media (max-width: 400px) {
+  .card {
+    height: 360px;
+    width: 327x;
+    border-radius: 15px;
+    margin: 0 24px;
+    padding: 24px;
+  }
+}

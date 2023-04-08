@@ -3,6 +3,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 //import { Inter } from "next/font/google";
 import styles from "@/styles/Rate.module.css";
+
+import Card from "../../component/card/Card";
+
 import MySVG from "../../public/illustration-thank-you.svg";
 
 export default function Rate(props) {
@@ -16,21 +19,19 @@ export default function Rate(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.Rectangle}>
-          <div className={styles.Img}>
-            <Image src={MySVG} alt="slip" />
-          </div>
-          <div className={styles.Rate}>
-            <p>You selected {rate} out of 5</p>
-          </div>
-          <h3 className={styles.Header}>Thank you!</h3>
-          <p className={styles.Text}>
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </p>
+      <Card>
+        <div className={styles.Img}>
+          <Image src={MySVG} alt="slip" />
         </div>
-      </main>
+        <div className={styles.Rate}>
+          {rate != 0 ? `You selected ${rate} out of 5` : `No rate selected`}
+        </div>
+        <h3 className={styles.Header}>Thank you!</h3>
+        <p className={styles.Text}>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </Card>
     </>
   );
 }

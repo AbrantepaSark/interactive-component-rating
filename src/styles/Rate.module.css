@@ -1,29 +1,3 @@
-.main {
-  width: 100%;
-  position: absolute;
-  top: 5%;
-  bottom: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Rectangle {
-  height: 416px;
-  width: 412px;
-  margin: 0 12px 0 12px;
-
-  /* Black (Gradient) */
-
-  background: radial-gradient(
-    98.96% 98.96% at 50% 0%,
-    #232a34 0%,
-    #181e27 100%
-  );
-  border-radius: 30px;
-  padding: 45px 20px;
-}
-
 .Img {
   width: 100%;
   display: flex;
@@ -38,8 +12,6 @@
   width: 183px;
   margin: auto;
   border-radius: 22.5px;
-  font-family: "Overpass";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   display: flex;
@@ -49,8 +21,6 @@
 }
 
 .Header {
-  font-family: "Overpass";
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   margin-top: 32px;
@@ -60,8 +30,6 @@
 }
 
 .Text {
-  font-family: "Overpass";
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
